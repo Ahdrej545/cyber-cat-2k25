@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОКАК | Кибермем 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    <div class="matrix-rain" id="matrixRain"></div>
+    <div class="neon-lines">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div class="interactive-bg" id="interactiveBg"></div>
+    <div class="particles-container" id="particlesContainer"></div>
+    <div class="digital-glitch" id="digitalGlitch"></div>
+    <div class="digital-clock" id="digitalClock">00:00:00</div>
+    <div class="counter">Поделились мемом: <span id="share-count">1,427,891</span></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-morph">
+                    <span class="logo-text">ОКАК MEME</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="#"><i class="fas fa-history"></i> История</a></li>
+                    <li><a href="#"><i class="fas fa-viruses"></i> Распространение</a></li>
+                    <li><a href="#"><i class="fas fa-brain"></i> Анализ</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>МЕМ МАЯ 2025</h1>
+            <p>Погрузись в цифровую вселенную, где мистический кот стал символом интернет-культуры</p>
+            
+            <div class="meme-card">
+                <div class="cat-hood">
+                    <div class="hood"></div>
+                    <div class="cat-face">
+                        <div class="eyes">
+                            <div class="eye"><div class="pupil"></div></div>
+                            <div class="eye"><div class="pupil"></div></div>
+                        </div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+                <div class="okak-text">ОКАК</div>
+                <div class="subtitle">
+                    Легендарный мем, покоривший интернет в начале мая 2025.<br>
+                    Чёрный кот в капюшоне с загадочной фразой "окак"<br>
+                    стал символом неожиданных поворотов и мистических совпадений
+                </div>
+                <div class="meme-date">Вирусный период: 1-15 мая 2025</div>
+            </div>
+            
+            <button class="btn" id="activateBtn">УЗНАТЬ БОЛЬШЕ</button>
+            
+            <div class="audio-controls">
+                <div class="audio-btn" id="sound1">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="audio-btn" id="sound2">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="audio-btn" id="sound3">
+                    <i class="fas fa-cat"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="parallax-section">
+            <div class="parallax-bg"></div>
+            <div class="parallax-content">
+                <h2>ФЕНОМЕН "ОКАК"</h2>
+                <p>Загадочный мем "Окак" появился в сети 1 мая 2025 года и за две недели стал глобальным культурным феноменом. Исследователи до сих пор спорят о его происхождении и значении.</p>
+                <p>Киберкот в капюшоне стал символом новой интернет-эры, где мемы формируют коллективное сознание.</p>
+                
+                <div class="cyber-map">
+                    <div class="map-node node-1" data-info="Социальные сети"><i class="fab fa-twitter"></i></div>
+                    <div class="map-node node-2" data-info="Меметика"><i class="fas fa-brain"></i></div>
+                    <div class="map-node node-3" data-info="Виртуальная реальность"><i class="fas fa-vr-cardboard"></i></div>
+                    <div class="map-node node-4" data-info="База данных"><i class="fas fa-database"></i></div>
+                    <div class="map-node node-5" data-info="ИИ Анализ"><i class="fas fa-robot"></i></div>
+                    <div class="map-node node-6" data-info="Культурное влияние"><i class="fas fa-globe"></i></div>
+                    <div class="map-node node-7" data-info="Психология"><i class="fas fa-user"></i></div>
+                    <div class="map-node node-8" data-info="Будущее"><i class="fas fa-rocket"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="terminal-section">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-btn btn-close"></div>
+                    <div class="terminal-btn btn-min"></div>
+                    <div class="terminal-btn btn-max"></div>
+                </div>
+                <div class="terminal-title">system@okak-meme:~</div>
+            </div>
+            <div class="terminal-body" id="terminalOutput">
+                <div>> Инициализация системы... УСПЕШНО</div>
+                <div>> Загрузка данных о меме... 100%</div>
+                <div>> Анализ вирусного распространения...</div>
+                <div id="terminalText"></div>
+            </div>
+            <div class="terminal-input">
+                <span class="terminal-prompt">okak-meme:~$</span>
+                <span id="terminalCommand">_</span>
+                <span class="terminal-cursor"></span>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <i class="fas fa-viruses"></i>
+                <h3>Вирусное распространение</h3>
+                <p>Мем "Окак" распространился по сети со скоростью лесного пожара, достигнув 1.4 миллиона репостов за первые 72 часа.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Коллективное сознание</h3>
+                <p>Феномен "Окак" демонстрирует, как интернет формирует новые формы коллективного разума и культурные коды.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cat"></i>
+                <h3>Символизм кота</h3>
+                <p>Кот в капюшоне стал архетипическим символом тайны и непредсказуемости в цифровую эпоху.</p>
+            </div>
+        </section>
+
+        <div class="hologram-section">
+            <h2 style="margin-bottom: 40px; color: var(--neon-blue);">ГОЛОГРАФИЧЕСКАЯ ПРОЕКЦИЯ</h2>
+            <div class="hologram-container">
+                <div class="hologram">
+                    <div class="hologram-inner"></div>
+                    <div class="hologram-core"></div>
+                    <div class="hologram-grid"></div>
+                </div>
+            </div>
+            <p style="margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Исследуйте голографическую проекцию мема "Окак" в 3D-пространстве с использованием квантовых точек и лазерной интерференции.
+            </p>
+        </div>
+
+        <div class="tech-cube-container">
+            <div class="cube">
+                <div class="face front">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>РЕПОСТЫ</h3>
+                </div>
+                <div class="face back">
+                    <i class="fas fa-globe"></i>
+                    <h3>ГЛОБАЛИЗАЦИЯ</h3>
+                </div>
+                <div class="face right">
+                    <i class="fas fa-brain"></i>
+                    <h3>ПСИХОЛОГИЯ</h3>
+                </div>
+                <div class="face left">
+                    <i class="fas fa-robot"></i>
+                    <h3>ИИ АНАЛИЗ</h3>
+                </div>
+                <div class="face top">
+                    <i class="fas fa-history"></i>
+                    <h3>ИСТОРИЯ</h3>
+                </div>
+                <div class="face bottom">
+                    <i class="fas fa-crystal-ball"></i>
+                    <h3>ПРЕДСКАЗАНИЯ</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-discord"></i><span>Discord</span></a>
+                <a href="https://t.me/Andrej1608"><i class="fab fa-telegram"></i><span>Telegram</span></a>
+                <a href="https://github.com/Ahdrej545/cyber-cat-2k25.git"><i class="fab fa-github"></i><span>GitHub</span></a>
+                <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </div>
+            <p>© 2025 ОКАК MEME | Все права в цифровой вселенной защищены</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
